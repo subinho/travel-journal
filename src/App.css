@@ -23,3 +23,55 @@
 .header-title {
   color: #fff;
 }
+
+.card {
+  position: relative;
+  top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  width: 400px;
+  height: 200px
+}
+
+.card-image {
+  width: 126px;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.card-info-location {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-info-description {
+  text-align: left;
+}
+
+.card-info-location > span {
+  margin-right: 10px;
+}
+
+a {
+  color: #918E9B;
+}
+
+a:visited {
+  color: #918E9B;
+}
+
+.card-info-location-title {
+  margin: 0;
+  letter-spacing: 0.17em;
+}
