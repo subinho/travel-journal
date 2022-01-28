@@ -1,3 +1,11 @@
+:root {
+  --lightGray: #918E9B;
+}
+
+* {
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -31,7 +39,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  padding: 10px;
 }
 
 .card-info {
@@ -53,25 +62,51 @@
 .card-info-location {
   display: flex;
   flex-direction: row;
-}
-
-.card-info-description {
-  text-align: left;
-}
-
-.card-info-location > span {
-  margin-right: 10px;
-}
-
-a {
-  color: #918E9B;
-}
-
-a:visited {
-  color: #918E9B;
+  margin-bottom: 0.3em;
 }
 
 .card-info-location-title {
   margin: 0;
   letter-spacing: 0.17em;
 }
+
+.card-info-location > p {
+  margin-right: 10px;
+}
+
+a {
+  color: var(--lightGray);
+}
+
+a:visited {
+  color: var(--lightGray);
+}
+
+.card-info-description {
+  text-align: left;
+}
+
+.card-info-description-title {
+  margin-bottom: 1em;
+}
+
+.card-info-description-description {
+  margin-top: 0.7em;
+}
+
+
+@media screen and (max-width: 440px) {
+  .card-info-location {
+    margin-bottom: 0.2em;
+  }
+  .card-info-location-title {
+    letter-spacing: 0;
+  }
+  .card-info-location > p {
+    margin-right: 5px;
+  }
+
+  .card-info-description-title{
+    margin: 0;
+  }
+} 
