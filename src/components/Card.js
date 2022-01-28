@@ -8,13 +8,13 @@ export default function Card(props) {
           </div>
           <div className='card-info'>
               <div className='card-info-location'>
-                <span className='card-info-location-title'>{props.location}</span>
-                <span className='card-info-google-maps'><a href={props.googleMaps} target='_blank'>View on google maps</a></span>
+                <p className='card-info-location-title'>{props.location}</p>
+                <p><a href={props.googleMaps} target='_blank'>View on google maps</a></p>
               </div>
               <div className='card-info-description'>
-                <h2>{props.title}</h2>
+                <h2 className='card-info-description-title'>{props.title}</h2>
                 <p><strong>{props.startDate} - {props.endDate}</strong></p>
-                <span>{props.description}</span>
+                <p className='card-info-description-description'>{props.description}</p>
               </div>
           </div>
           
